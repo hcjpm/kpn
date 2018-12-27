@@ -5,7 +5,7 @@ session_start();
 if (isset($_SESSION["gra"])) {
   //Zalogowany gracz.
   $prefiks = "zg_";
-  $informacja = "wylogowanie";
+  $informacja = "zg_daneGracza";
   $zawartosc = "pojedynek";
 } else {
   $prefiks = "nz_";
