@@ -8,10 +8,11 @@ if (isset($_SESSION["gra"])) {
   $informacja = "wylogowanie";
 } else {
   $prefiks = "nz_";
-  $informacja = "logowanie";
+  $informacja = "nz_logowanie";
 }
 
 function powitanie() {
+  global $prefiks;
   if (strcmp($prefiks, "nz_")) {
         return "powitanie";
       } else {
