@@ -6,18 +6,11 @@ if (isset($_SESSION["gra"])) {
   //Zalogowany gracz.
   $prefiks = "zg_";
   $informacja = "wylogowanie";
+  $zawartosc = "pojedynek";
 } else {
   $prefiks = "nz_";
   $informacja = "nz_logowanie";
-}
-
-function powitanie() {
-  global $prefiks;
-  if (strcmp($prefiks, "nz_")) {
-        return "powitanie";
-      } else {
-        return "pojedynek";
-      }
+  $zawartosc = "powitanie";
 }
 
 //Sprawzenie, czy wybrano opcję z MENU:
@@ -25,7 +18,7 @@ if (isset($_GET["o"])) {
   //Wybrano opcję z MENU.
   switch ($_GET["o"]) {
     default:
-      $zawartosc = powitanie();
+      //
   }
 } else {
   //Sprawdzenie czy wybrano akcję z formularza:
@@ -33,10 +26,8 @@ if (isset($_GET["o"])) {
     //Wybrano akcję z formularza.
     switch ($_POST["akcja"]) {
       default:
-        $zawartosc = powitanie();
+        //
     }
-  } else {
-    $zawartosc = powitanie();
   }
 }
 
