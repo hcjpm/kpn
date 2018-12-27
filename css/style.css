@@ -1,0 +1,90 @@
+body {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+select, th,td {
+    background-color: silver;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover {
+    background-color: silver;
+}
+
+.odstepy {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.tlo {
+    background-color: lightgrey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.naglowek {
+    background-color: silver;
+    text-align: center;
+    font-weight: bold;
+}
+
+.zawartosc {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Wygrana {
+    background-color: green;
+}
+
+.Remis {
+    background-color: silver;
+}
+
+.Przegrana {
+    background-color: red;
+}
+
+.tac {
+    text-align: center;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#informacja {
+    text-align: center;
+}
+
+#wynik {
+    text-align: center;
+}
